@@ -1,0 +1,19 @@
+.companies {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .companies img:hover {
+    transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+  }
+  @media (max-width: 1200px) {
+    .companies {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }

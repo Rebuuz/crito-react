@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const MenuBar = () => {
+const MenuBar = () => {
   return (
-    <button class="menu-bars" type="button" onclick="alert('Mobile view coming soon!')"><i class="fa-solid fa-bars"></i></button>
+    <button className="menu-bars" type="button" onclick="alert('Mobile view coming soon!')"><i className="fa-solid fa-bars"></i></button>
   )
 }
+
+export default MenuBar
