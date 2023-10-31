@@ -1,18 +1,18 @@
 import './stylesheets/App.css';
-import './stylesheets/Global.css';
-import './stylesheets/Header.css';
-import './stylesheets/Showcase.css';
-import './stylesheets/Companies.css';
-import './stylesheets/Features.css';
-import './stylesheets/About.css';
-import './stylesheets/Services.css';
+import './stylesheets/General.css';
+// import './stylesheets/Header.css';
+// import './stylesheets/Showcase.css';
+// import './stylesheets/Companies.css';
+// import './stylesheets/Features.css';
+// import '../src/components/About/About.css';
+// import './stylesheets/Services.css';
 
-import Header from './components/Header';
-import Showcase from './components/Showcase';
-import Companies from './components/Companies';
-import Features from './components/Features';
-import About from './components/About';
-import Services from './components/Services';
+import Header from '../src/components/Header/Header';
+import Showcase from './components/Showcase/Showcase';
+import Companies from '../src/components/Clients/Companies';
+import Features from '../src/components/Features/Features';
+import About from '../src/components/About/About';
+import Services from '../src/components/Services/Services';
 
 
 function App() {
@@ -20,15 +20,10 @@ function App() {
     <div className='wrapper'>
 
       <Header />
-
       <Showcase />
-
       <Companies />
-
       <Features />
-
       <About />
-
       <Services />
       
     </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Founder from '../assets/images/founder.png';
+import './About.css';
+
+import Founder from '../../assets/images/founder.png';
 
 const About = () => {
   return (

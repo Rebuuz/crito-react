@@ -1,10 +1,12 @@
 import React from 'react';
 
-import Logo1 from '../assets/images/Logo1.svg';
-import Logo2 from '../assets/images/Logo2.svg';
-import Logo3 from '../assets/images/Logo3.svg';
-import Logo4 from '../assets/images/Logo4.svg';
-import Logo5 from '../assets/images/Logo5.svg';
+import './Companies.css';
+
+import Logo1 from '../../assets/images/Logo1.svg';
+import Logo2 from '../../assets/images/Logo2.svg';
+import Logo3 from '../../assets/images/Logo3.svg';
+import Logo4 from '../../assets/images/Logo4.svg';
+import Logo5 from '../../assets/images/Logo5.svg';
 
 const Companies = () => {
 

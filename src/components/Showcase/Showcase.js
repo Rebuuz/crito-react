@@ -1,6 +1,7 @@
 import React from 'react';
+import './Showcase.css';
 
-import ShowcaseImage from '../assets/images/Image-showcase.svg';
+import ShowcaseImage from '../../assets/images/Image-showcase.svg';
 
 const Showcase = () => {
   return (
