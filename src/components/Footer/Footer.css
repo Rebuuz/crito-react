@@ -1,0 +1,91 @@
+.footer {
+    background-color: #0E1021;
+    background-image: url('../../assets/images/Element.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+  .footer .container {
+    padding-top: 2rem;
+    color: #B6B6BC;
+    font-weight: 500;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    align-items: center;
+  }
+  @media (max-width: 1400px) {
+    .footer .container {
+      align-items: baseline;
+      padding-top: 1rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    .footer .container {
+      padding-top: 1rem;
+      gap: 2rem;
+      align-items: baseline;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer .container {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  @media (max-width: 576px) {
+    .footer .container {
+      padding-top: 2rem;
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+  .footer .container .footer-logo img {
+    margin-bottom: 2rem;
+  }
+  .footer .container .footer-logo p {
+    font-weight: 300;
+    margin: 0;
+  }
+  @media (max-width: 576px) {
+    .footer .container .footer-logo p {
+      font-size: 0.9em;
+    }
+  }
+  .footer .container .column h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 576px) {
+    .footer .container .column h3 {
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+      font-size: 1.1em;
+    }
+  }
+  .footer .container .column ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer .container .column ul li {
+    list-style-type: none;
+  }
+  .footer .container .column ul li a {
+    text-decoration: none;
+    color: #B6B6BC;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+  @media (max-width: 576px) {
+    .footer .container .column ul li a {
+      font-size: 0.9em;
+    }
+  }
+  .footer .container .column ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
