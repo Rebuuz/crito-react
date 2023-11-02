@@ -1,14 +1,33 @@
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
 .section-title {
   margin-top: 2rem;
   text-align: center;
 }
 
-.image {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+}
+
+.image {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .image img {
   height: 40%;
   width: 40%;
+}
+
+.bottom-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
