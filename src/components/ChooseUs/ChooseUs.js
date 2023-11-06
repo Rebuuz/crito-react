@@ -1,5 +1,4 @@
 import React from 'react';
-import './ChooseUs.css';
 
 import Icon1 from '../../assets/images/icon1.svg';
 import Icon2 from '../../assets/images/icon2.svg';

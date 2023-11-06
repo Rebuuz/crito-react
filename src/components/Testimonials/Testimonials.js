@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Testimonials.css';
-
 import Round1 from '../../assets/images/round1.svg';
 import Round2 from '../../assets/images/round2.svg';
 import Round3 from '../../assets/images/round3.svg';

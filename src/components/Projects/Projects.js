@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Projects.css';
-
 import Article1 from '../../assets/images/article1.svg';
 import Article2 from '../../assets/images/article2.svg';
 import Article3 from '../../assets/images/article3.svg';

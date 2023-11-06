@@ -1,0 +1,233 @@
+.about-company {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+            width: 100%;
+        }
+
+        .column-left {
+            display: flex;
+            position: relative;
+            margin-left: 3rem;
+
+            @media (max-width: 1200px) {
+                margin: 0;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+                margin-left: 0;
+                align-content: center;
+            }
+            
+            img {
+                position: absolute;
+
+                @media (max-width: 1200px) {
+                    position: relative;
+                }
+                
+                @media (max-width: 576px) {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+            }
+            
+            .founder-box {
+                background-color: #BEEBFF;
+                position: absolute;
+                margin-left: -60px;
+                margin-bottom: 20px;
+                align-self: flex-end;
+                max-width: 368px;
+                padding: 2rem 1rem 2rem 2rem;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+                @media (max-width: 1200px) {
+                    position: absolute;
+                    margin: 0;
+                }
+
+                @media (max-width: 576px) {
+                    margin: 0 auto;
+                    text-align: left;
+                    width: 100%;
+                    padding: 1rem;
+                }
+
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #191919;
+
+                    @media (max-width: 576px) {
+                        font-size: 1.1em;
+                    }
+                }
+
+                span {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 16px;
+                    color: #F94D1C;
+                    font-weight: 700;
+                    
+                    @media (max-width: 576px) {
+                        font-size: .9em;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 1rem;
+
+                    @media (max-width: 576px) {
+                        font-size: .9em;
+                    }
+                }
+            }
+        }
+
+        .column-right {
+            padding: 1.5rem;
+
+            @media (max-width: 1200px) {
+                padding: 0;
+                width: 100%;
+            }
+
+            @media (max-width: 576px) {
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 1.5rem;
+                width: 100%;
+            }
+
+            h3 {
+                margin: 1.5rem 0 2rem 0;
+                color: #F94D1C;
+                font-weight: 400;
+                font-size: 18px;
+    
+                @media (max-width: 992px) {
+                    margin: 1rem;
+                    text-align: center;
+                }
+
+                @media (max-width: 576px) {
+                    padding-bottom: 1rem;
+                    margin: 0;
+                    font-size: .9em;
+                }
+    
+            }
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+    
+                @media (max-width: 1400px) {
+                    font-size: 40px;
+                }
+    
+                @media (max-width: 992px) {
+                    text-align: center;
+                }
+    
+                @media (max-width: 768px) {
+                    font-size: 1.5em;
+                }
+
+                @media (max-width: 576px) {
+                    padding-bottom: 2rem;
+                    text-align: left;
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 1.3em;
+                }
+    
+            }
+
+            p {
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+
+                @media (max-width: 576px) {
+                    text-align: left;
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .btn-black {
+                margin-right: 2rem;
+
+                @media (max-width: 576px) {
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            span {
+                margin-left: 1rem;
+
+                @media (max-width: 576px) {
+                    margin-left: 0;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+
+                 @media (max-width: 576px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    align-self: flex-start;
+                    margin-left: 1.5rem;
+                    padding-bottom: 1rem;
+                 }
+            }
+        }
+    }
+} 

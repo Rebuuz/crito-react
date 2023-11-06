@@ -1,0 +1,92 @@
+.project-and-case {
+
+    .container {
+
+        .section-title {
+            text-align: center;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+
+            @media (max-width: 576px) {
+                margin-top: 1rem;
+            }
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+
+            @media (max-width: 576px) {
+                gap: 1rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+
+            .article {
+                color: #191919;
+                text-decoration: none;
+
+                &:hover {
+
+                    img {
+                        transform: scale(1.1);
+                        transition: all 1s ease-in-out;
+                    }
+
+                    div {
+                        text-decoration: underline;
+                        font-weight: bold;
+
+                        i {
+                            animation: pulse-rotate 1s linear infinite;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            
+                h3 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1.5px solid #E7E7E7;
+                    color: #191919;
+
+                    @media (max-width: 576px) {
+                    font-size: 1em;
+                    }
+                }
+
+                div {
+                    text-decoration: none;
+                    color: #191919;
+                    display: block;
+                    text-align: right;
+                    margin-top: 2rem;
+
+                    @media (max-width: 576px) {
+                        font-size: 0.9em;
+                        text-align: left;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 5rem;
+            
+            @media (max-width: 576px) {
+                margin-top: 2.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.testimonials {
+    background-color: #F0D082;
+    padding-bottom: 5rem;
+
+    @media (max-width: 576px) {
+        padding-bottom: .5rem;
+    }
+
+    .container {
+        border: 1px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+
+        .section-title {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            text-align: center;
+
+            @media (max-width: 576px) {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .section-reviews {
+
+            .cards {
+                display: flex;
+                justify-content: space-around;
+                gap: 4rem;
+                padding: 3rem;
+
+                @media (max-width: 992px) {
+                    display: grid;
+                }
+
+                @media (max-width: 576px) {
+                    display: grid;
+                    gap: 2rem;
+                    padding: 0;
+                }
+
+                .review-card {
+
+                    @media (max-width: 576px) {
+                        border-bottom: 1.5px solid #E7E7E7;
+                    }
+
+                    p {
+                        margin-bottom: 2rem;
+
+                        @media (max-width: 576px) {
+                            font-size: .9em;
+                        }
+                    }
+
+                    .stars {
+                        color: #F94D1C;
+                        font-size: 16px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .review-bottom {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        @media (max-width: 576px) {
+                            margin-bottom: 1.5rem;
+                        }
+
+                        div {
+                           display: flex;
+                           flex-direction: column;
+                           margin-left: 1rem;
+
+                           @media (max-width: 576px) {
+                            justify-content: flex-end;
+                           }
+
+                           h3 {
+                            font-size: 22px;
+                            font-weight: 700;
+
+                            @media (max-width: 576px) {
+                                font-size: 1.1em;
+                            }
+                           }
+
+                           p {
+                            color: #F94D1C;
+                            margin-bottom: 0;
+                            font-size: 16px;
+
+                            @media (max-width: 576px) {
+                                font-size: .9em;
+                            }
+                           }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .button {
+            margin-top: 5rem;
+            margin-bottom: 6rem;
+            text-align: center;
+
+            @media (max-width: 576px){
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

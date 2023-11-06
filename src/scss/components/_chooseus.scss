@@ -1,0 +1,194 @@
+.why-choose-us {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        @media (max-width: 1200px) {
+           width: 100%; 
+        }
+
+        @media (max-width: 992px) {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+            padding: 0;
+        }
+
+        .content-left {
+
+            @media (max-width: 1200px) { 
+                width: 100%;
+                text-align: center;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+
+            p {
+                margin: 1.5rem 0 1.5rem 0;
+                color: #F94D1C;
+                font-weight: 400;
+                font-size: 18px;
+
+                @media (max-width: 992px) {
+                    margin: 1rem;
+                }
+
+                @media (max-width: 576px) {
+                    margin: 0;
+                    width: 100%;
+                    font-size: .9em;
+                    text-align: center;
+                    padding: 1rem;
+
+                }
+            }
+
+            h2 {
+                margin-bottom: 1.5rem;
+                font-weight: 700;
+                font-size: 45px;
+
+                @media (max-width: 1400px) {
+                    font-size: 40px;
+                }
+
+                @media (max-width: 1200px) {
+                    font-size: 1.5em;
+                }
+    
+                @media (max-width: 992px) {
+                    text-align: center;
+                }
+    
+                @media (max-width: 768px) {
+                    font-size: 1.5em;
+                }
+
+                @media (max-width: 576px) {
+                    padding-bottom: 2rem;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 1.3em;
+                }
+            }
+
+            .bottom-box {
+                display: grid;
+                grid-template-columns: 1fr 7fr;
+                align-items: center;
+                justify-items: center;
+
+                @media (max-width: 1200px) {
+                    grid-template-columns: 1fr;
+                }
+                
+                @media (max-width: 576px) {
+                    padding-bottom: 2rem;
+                    padding-top: 1rem;
+                }
+
+                .icon {
+                    
+                    img {
+                        border: 1.5px solid #E7E7E7;
+                        border-radius: 50%;
+                        padding: 0.5rem;
+                        background-color: #FFFFFF;
+                        margin-bottom: 2rem;
+
+                        @media (max-width: 1200px) {
+                            margin-bottom: 0;
+                        }
+
+                        @media (max-width: 576px) {
+                            text-align: left;
+                            margin-left: 1rem;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                }
+
+                .text {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    margin-left: 1rem;
+                    line-height: 1rem;
+
+                    @media (max-width: 576px) {
+                        display: grid;
+                        align-items: baseline;
+                        
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                        color: #191919;
+                        margin: 0.5rem 0;
+                        font-weight: 700;
+                        padding: 0;
+
+                        @media (max-width: 576px) {
+                            font-size: 1.1em;
+                        }
+                    }
+
+                    p {
+                        margin: 0 0 3rem 0;
+                        color: #191919;
+
+                        @media (max-width: 576px) {
+                            font-size: .9em;
+                            margin: 0;
+                            margin-bottom: 1.5rem;
+                            padding: 0;
+                            text-align: left;
+                        }
+                    }
+
+                }
+
+            }
+        }
+        .content-right {
+            padding-top: 3rem;
+            position: relative;
+
+            @media (max-width: 1200px) {
+                display: none;
+            }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
+            
+            .bg-box {
+                position: absolute;
+                background-color: #F0EFE9;
+                width: 1057px; 
+                height: 425px;
+                top: 13rem;
+                right: -18.99rem;
+            }
+
+            img {
+                position: absolute;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

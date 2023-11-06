@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './About.css';
 
 import Founder from '../../assets/images/founder.png';
 

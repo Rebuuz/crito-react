@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Team.css';
-
 import Team1 from '../../assets/images/team1.svg';
 import Team2 from '../../assets/images/team2.svg';
 import Team3 from '../../assets/images/team3.svg';

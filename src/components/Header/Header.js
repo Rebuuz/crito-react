@@ -2,8 +2,6 @@ import React from 'react'
 import MenuBar from './MenuBar';
 import HeaderMenu from './HeaderMenu';
 
-import './Header.css';
-
 import CritoLogo from '../../assets/images/Crito-logo.svg';
 
 const Header = () => {

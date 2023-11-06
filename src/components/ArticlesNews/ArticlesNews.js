@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './ArticlesNews.css';
 
 import Article1 from '../../assets/images/25mars.png';
 import Article2 from '../../assets/images/17mars.png';

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../stylesheets/General.css';
 
 import Header from '../components/Header/Header';
 import Showcase from '../components/Showcase/Showcase';
