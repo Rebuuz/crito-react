@@ -1,5 +1,10 @@
+/* BASE CODE */
 @import './base';
 @import './header';
+@import './footer';
+@import './bottomfooter';
+
+/* HOME PAGE */
 @import './showcase';
 @import './clients';
 @import './features';
@@ -11,6 +16,10 @@
 @import './testimonials';
 @import './articlenews';
 @import './signup';
-@import './footer';
-@import './bottomfooter';
+
+/* NOT FOUND PAGE */
 @import './notfound';
+
+/* CONTACT PAGE */
+@import './showcasecontact';
+@import './contactinfo';

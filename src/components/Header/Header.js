@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuBar from './MenuBar';
 import HeaderMenu from './HeaderMenu';
+import {NavLink} from 'react-router-dom';
 
 import CritoLogo from '../../assets/images/Crito-logo.svg';
 
@@ -8,7 +9,7 @@ const Header = () => {
   return (
     <header>
         <div className="container">
-            <a href="index.html"><img src={ CritoLogo } alt="logo" className="crito logotype" /></a>
+            <NavLink to="/"><img src={ CritoLogo } alt="logo" className="crito logotype" /></NavLink>
             
             <MenuBar />
             <HeaderMenu />

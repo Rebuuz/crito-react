@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const HeaderMenu = () => {
   return (
@@ -27,10 +28,10 @@ const HeaderMenu = () => {
     </div>
     <div className="main-menu">
         <nav>
-            <a className="active" href="index.html">Home</a>
-            <a href="#">Services</a>
-            <a href="#">News</a>
-            <a href="contact.html">Contact</a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/services">Services</NavLink>
+            <NavLink to="/news">News</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
         </nav>
         <a className="btn-yellow btn-login" href="#">Login <i className="fa-regular fa-arrow-up-right"></i></a>
     </div>
