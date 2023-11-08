@@ -6,21 +6,14 @@ import ServiceBox from './ServiceBox';
 
 function Services() {
 
-    // const services = [
-    //     { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
-    //     { title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
-    //     { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
-    //     { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." }
-    // ];
+    const services = [
+        { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+        { title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+        { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+        { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." }
+    ];
 
-    const [services, setServices] = useState([
-        { id: 1, title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
-        { id: 2, title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
-        { id: 3, title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
-        { id: 4, title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." }
-        ]);
-
-
+    
   return (
     <section className="services">
         <div className="container">
@@ -31,9 +24,8 @@ function Services() {
             </div>
             <div className="cards">
                 {
-                    services.map((service, i) => {
-                        <ServiceBox key={i} title={service.title} description={service.description} />
-                        console.log(services)
+                    services.map((services, index) => {
+                        <ServiceBox key={index} title={services.title}/>
                     })
                 }
                 {/* <div className="box">
