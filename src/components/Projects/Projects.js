@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Article1 from '../../assets/images/article1.svg';
 import Article2 from '../../assets/images/article2.svg';
@@ -14,29 +15,29 @@ const Projects = () => {
                 <h2>Let’s Look At Our Global Projects</h2>
             </div>
             <div className="projects">
-                <a className="article" href="#">
+                <NavLink className="article" to="/article">
                     <img src={ Article1 } alt="En närbild på en Business-tidning" />
                     <h3>Grow your business</h3>
                     <div>Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </a>
-                <a className="article" href="#">
+                </NavLink>
+                <NavLink className="article" to="/article">
                     <img src={ Article2 } alt="En närbild på en iPad och en Apple Watch" />
                     <h3>Why your client needs a responsive website</h3>
                     <div>Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </a>
-                <a className="article" href="#">
+                </NavLink>
+                <NavLink className="article" to="/article">
                     <img src={ Article3 } alt="En närbild på ett anteckningsblock" />
                     <h3>Educate your employees to get better results</h3>
                     <div>Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </a>
-                <a className="article" href="#">
+                </NavLink>
+                <NavLink className="article" to="/article">
                     <img src={ Article4 } alt="En närbild på en laptop med grafer" />
                     <h3>Business Insights is a important piece of your business</h3>
                     <div>Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </a>
+                </NavLink>
             </div>
             <div className="button">
-                <a className="btn-black" href="#">All Recent Projects <i class="fa-regular fa-arrow-up-right"></i></a>
+                <NavLink className="btn-black" to="/projects">All Recent Projects <i className="fa-regular fa-arrow-up-right"></i></NavLink>
             </div>
         </div>
     </section>

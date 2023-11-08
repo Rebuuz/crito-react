@@ -5,6 +5,8 @@ import Footer from '../components/Footer/Footer';
 import BottomFooter from '../components/Footer/BottomFooter';
 import ShowcaseContact from '../components/Showcase/ShowcaseContact';
 import ContactInfo from '../components/Contact/ContactInfo';
+import Form from '../components/Form/Form';
+import Map from '../components/Map/Map';
 
 const Contact = () => {
   return (
@@ -12,6 +14,8 @@ const Contact = () => {
       <Header />
       <ShowcaseContact />
       <ContactInfo />
+      <Form />
+      <Map />
       <Footer />
       <BottomFooter />
     </div>

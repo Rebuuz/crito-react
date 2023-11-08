@@ -1960,3 +1960,62 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.form {
+  margin-top: 4rem;
+}
+@media (max-width: 1200px) {
+  .form {
+    background-color: #F0EFE9;
+  }
+}
+.form .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #F0EFE9;
+}
+.form .container .section-title {
+  margin-top: 3rem;
+}
+.form .container .section-title h2 {
+  text-align: center;
+}
+.form .container .form-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media (max-width: 992px) {
+  .form .container .form-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+.form .container .form-container .input {
+  width: 100%;
+}
+.form .container .form-container .input .form-input {
+  padding: 15px 30px;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+}
+.form .container .form-container a {
+  width: 100%;
+  text-align: center;
+}
+
+.map {
+  margin-top: 4rem;
+}
+.map iframe {
+  width: 100%;
+  height: 620px;
+}

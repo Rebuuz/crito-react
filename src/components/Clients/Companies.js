@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Logo1 from '../../assets/images/Logo1.svg';
 import Logo2 from '../../assets/images/Logo2.svg';
@@ -22,9 +23,9 @@ const Companies = () => {
 
             {
                logotypes.map((logo, index) => (
-                <a href="#" key={index}>
+                <NavLink to="/company" key={index}>
                     <img src={logo.src} alt={logo.alt} className='logo-img'/>
-                </a>
+                </NavLink>
                ))
             }
         </div>

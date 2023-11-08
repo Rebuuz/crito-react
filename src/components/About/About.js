@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 import Founder from '../../assets/images/founder.png';
@@ -22,8 +23,8 @@ const About = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
 
             <div className="buttons">
-                <a className="btn-black" href="#">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
-                <a className="btn-round" href="#"><i className="fa-sharp fa-solid fa-play"></i></a><span>Intro Video</span>
+                <NavLink className="btn-black" to="/services">Learn More <i className="fa-regular fa-arrow-up-right"></i></NavLink>
+                <NavLink className="btn-round" to="/video"><i className="fa-sharp fa-solid fa-play"></i></NavLink><span>Intro Video</span>
             </div>
         </div>
     </div>

@@ -1,6 +1,5 @@
 import React from 'react';
-
-// import './Footer.css';
+import { NavLink } from 'react-router-dom';
 
 import footerLogo from '../../assets/images/Logo-footer.svg';
 
@@ -16,37 +15,37 @@ const Footer = () => {
         <div className="column">
             <h3>Company</h3>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Career</a></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/features">Features</NavLink></li>
+                <li><NavLink to="/works">Works</NavLink></li>
+                <li><NavLink to="/career">Career</NavLink></li>
             </ul>
         </div>
         <div className="column">
             <h3>Help</h3>
             <ul>
-                <li><a href="#">Customer Support</a></li>
-                <li><a href="#">Delivery Details</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><NavLink to="/support">Customer Support</NavLink></li>
+                <li><NavLink to="/delivery">Delivery Details</NavLink></li>
+                <li><NavLink to="/terms">Terms & Conditions</NavLink></li>
+                <li><NavLink to="/policy">Privacy Policy</NavLink></li>
             </ul>
         </div>
         <div className="column">
             <h3>Resources</h3>
             <ul>
-                <li><a href="#">Free eBooks</a></li>
-                <li><a href="#">Development Tutorial</a></li>
-                <li><a href="#">How to-Blog</a></li>
-                <li><a href="#">Youtube Playlist</a></li>
+                <li><NavLink to="/ebooks">Free eBooks</NavLink></li>
+                <li><NavLink to="/tutorials">Development Tutorial</NavLink></li>
+                <li><NavLink to="/blog">How to-Blog</NavLink></li>
+                <li><NavLink to="/youtube">Youtube Playlist</NavLink></li>
             </ul>
         </div>
         <div className="column">
             <h3>Links</h3>
             <ul>
-                <li><a href="#">Free eBooks</a></li>
-                <li><a href="#">Development Tutorial</a></li>
-                <li><a href="#">How to - Blog</a></li>
-                <li><a href="#">Youtube Playlist</a></li>
+                <li><NavLink to="/ebooks">Free eBooks</NavLink></li>
+                <li><NavLink to="/tutorials">Development Tutorial</NavLink></li>
+                <li><NavLink to="/blog">How to-Blog</NavLink></li>
+                <li><NavLink to="/youtube">Youtube Playlist</NavLink></li>
             </ul>
         </div>
     </div>

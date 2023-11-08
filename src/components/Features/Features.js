@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Features = () => {
   return (
@@ -7,7 +8,7 @@ const Features = () => {
         <div className="content-left col-5">
             <p>Features</p>
             <h2>Our Accounting is trusted by thousand of companies</h2>
-            <a className="btn-yellow" href="#">Learn More <i className="fa-regular fa-arrow-up-right"></i></a>
+            <NavLink className="btn-yellow" to="/services">Learn More <i className="fa-regular fa-arrow-up-right"></i></NavLink>
         </div>
         <div className="content-right col-7">
             <div className="content-box">
