@@ -13,7 +13,7 @@ function Services() {
         { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." }
     ];
 
-    
+
   return (
     <section className="services">
         <div className="container">
@@ -25,33 +25,10 @@ function Services() {
             <div className="cards">
                 {
                     services.map((services, index) => {
-                        <ServiceBox key={index} title={services.title}/>
+                        return <ServiceBox key={index} title={services.title} description={services.description}/>
                     })
                 }
-                {/* <div className="box">
-                    <div className="line"></div>
-                    <h3>Business Advice</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <NavLink className="btn-round" to="/services"><i className="fa-regular fa-arrow-right"></i></NavLink>
-                </div>
-                <div className="box">
-                    <div className="line"></div>
-                    <h3>Startup Business</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <NavLink className="btn-round" to="/services"><i className="fa-regular fa-arrow-right"></i></NavLink>
-                </div>
-                    <div className="box">
-                    <div className="line"></div>
-                    <h3>Financial Advice</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <NavLink className="btn-round" to="/services"><i className="fa-regular fa-arrow-right"></i></NavLink>
-                </div>
-                <div className="box">
-                    <div className="line"></div>
-                    <h3>Risk Management</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <NavLink className="btn-round" to="/services"><i className="fa-regular fa-arrow-right"></i></NavLink>
-                </div> */}
+                
             </div>
             <div className="button">
                 <NavLink className="btn-transparent" to="/services">Browse Services <i className="fa-regular fa-arrow-up-right"></i></NavLink>
