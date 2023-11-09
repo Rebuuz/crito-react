@@ -2000,6 +2000,11 @@ body {
 .form .container .form-container .input {
   width: 100%;
 }
+.form .container .form-container .input label {
+  color: #952323;
+  font-size: 0.9em;
+  margin: 1rem;
+}
 .form .container .form-container .input .form-input {
   padding: 15px 30px;
   margin-bottom: 2rem;

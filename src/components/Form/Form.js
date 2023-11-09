@@ -1,9 +1,53 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const Form = () => {
+
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const form = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            message: '',
+        },
+
+        validationSchema: Yup.object( {
+            name: Yup.string()
+            .required("Full name is required.")
+            .min(2, "The name must consist of at least two letters."),
+            email: Yup.string()
+            .required("A valid  email is required.")
+            .email("Please enter a valid email adress"),
+            message: Yup.string()
+            .required("A message is required.")
+            .min(2, "The message must consist of at least two letters.")
+        }),
+
+        onSubmit: async (values) => {
+            const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+                method: 'post',
+                headers: {
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify(values)
+            })
+
+            switch (result.status) {
+                case 200:
+                    alert('Meddelandet skickades.') 
+                    break;
+                case 400:
+                    setErrorMessage('Något gick fel')
+                    break;
+            }
+            console.log(values)
+        }
+    })
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={form.handleSubmit} noValidate>
             <div className="container">
                 <div className="section-title">
                     <h2>Leave us a message</h2>
@@ -11,15 +55,18 @@ const Form = () => {
                 </div>
                 <div className="form-container">
                     <div className="input">
-                        <input type="text" className="form-input" placeholder="Name*" required />
+                        <label>{form.errors.name}</label>
+                        <input type="text" className="form-input" placeholder="Name*" name="name" value={form.values.name} onChange={form.handleChange}/>
                     </div>
                     <div className="input">
-                        <input type="email" className="form-input" placeholder="Email*" required />
+                        <label>{form.errors.email}</label>
+                        <input type="email" className="form-input" placeholder="Email*" name="email" value={form.values.email} onChange={form.handleChange}/>
                     </div>
                     <div className="input">
-                        <textarea className="form-input" name="message" rows="5" placeholder="Your Message*" required></textarea>
+                        <label>{form.errors.message}</label>
+                        <textarea className="form-input" name="message" rows="5" placeholder="Your Message*" value={form.values.message} onChange={form.handleChange}></textarea>
                     </div>
-                    <a className="btn-yellow" href="#">Send Message <i className="fa-regular fa-arrow-up-right"></i></a>
+                    <button type="submit" className="btn-yellow">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
                 </div>
             </div>
         </form>
