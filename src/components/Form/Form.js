@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 const Form = () => {
 
     const [errorMessage, setErrorMessage] = useState('');
+    const [messageSent, setMessageSent] = useState('');
 
     const form = useFormik({
         initialValues: {
@@ -36,7 +37,7 @@ const Form = () => {
 
             switch (result.status) {
                 case 200:
-                    alert('Meddelandet skickades.') 
+                    setMessageSent('Meddelandet skickades!') 
                     break;
                 case 400:
                     setErrorMessage('Något gick fel')
@@ -55,17 +56,18 @@ const Form = () => {
                 </div>
                 <div className="form-container">
                     <div className="input">
-                        <label>{form.errors.name}</label>
-                        <input type="text" className="form-input" placeholder="Name*" name="name" value={form.values.name} onChange={form.handleChange}/>
+                        <label className={form.touched.name && form.errors.name ? 'error': ''}>{form.touched.name && form.errors.name}</label>
+                        <input type="text" className="form-input" placeholder="Name*" name="name" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur}/>
                     </div>
                     <div className="input">
-                        <label>{form.errors.email}</label>
-                        <input type="email" className="form-input" placeholder="Email*" name="email" value={form.values.email} onChange={form.handleChange}/>
+                        <label className={form.touched.email && form.errors.email ? 'error': ''}>{form.touched.email && form.errors.email}</label>
+                        <input type="email" className="form-input" placeholder="Email*" name="email" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur}/>
                     </div>
                     <div className="input">
-                        <label>{form.errors.message}</label>
-                        <textarea className="form-input" name="message" rows="5" placeholder="Your Message*" value={form.values.message} onChange={form.handleChange}></textarea>
+                        <label className={form.touched.message && form.errors.message ? 'error': ''}>{form.touched.message && form.errors.message}</label>
+                        <textarea className="form-input" name="message" rows="5" placeholder="Your Message*" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur}></textarea>
                     </div>
+                    <p className="success-message">{messageSent}</p>
                     <button type="submit" className="btn-yellow">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
                 </div>
             </div>

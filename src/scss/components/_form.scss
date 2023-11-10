@@ -45,14 +45,19 @@
 
                 .form-input {
                     padding: 15px 30px;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                     width: 100%;
                     border-radius: 25px;
                     border: none;
                 }
             }
 
-            a {
+            .success-message {
+                text-align: center;
+                color: green;
+            }
+
+            button {
                 width: 100%;
                 text-align: center;
             }

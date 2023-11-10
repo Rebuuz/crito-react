@@ -2007,12 +2007,16 @@ body {
 }
 .form .container .form-container .input .form-input {
   padding: 15px 30px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
   border-radius: 25px;
   border: none;
 }
-.form .container .form-container a {
+.form .container .form-container .success-message {
+  text-align: center;
+  color: green;
+}
+.form .container .form-container button {
   width: 100%;
   text-align: center;
 }
