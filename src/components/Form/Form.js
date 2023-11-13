@@ -20,10 +20,10 @@ const Form = () => {
             .min(2, "The name must consist of at least two letters."),
             email: Yup.string()
             .required("A valid  email is required.")
-            .email("Please enter a valid email adress"),
+            .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/, "Please enter a valid email adress"),
             message: Yup.string()
             .required("A message is required.")
-            .min(2, "The message must consist of at least two letters.")
+            .min(10, "The message must consist of at least two letters.")
         }),
 
         onSubmit: async (values) => {
@@ -38,6 +38,7 @@ const Form = () => {
             switch (result.status) {
                 case 200:
                     setMessageSent('Meddelandet skickades!') 
+                    console.log(result)
                     break;
                 case 400:
                     setErrorMessage('Något gick fel')
