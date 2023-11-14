@@ -11,8 +11,8 @@ const Header = () => {
         <div className="container">
             <NavLink to="/"><img src={ CritoLogo } alt="logo" className="crito logotype" /></NavLink>
             
-            <MenuBar />
             <HeaderMenu />
+            <MenuBar />
         </div>
     </header>
   )

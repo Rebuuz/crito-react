@@ -293,6 +293,59 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 12px;
 }
 
+.menu-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.menu-bars .fa-times {
+  color: #fff;
+}
+.menu-bars .fa-times:hover {
+  color: #F94D1C;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.menu-objects {
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: right 0.3s ease;
+}
+.menu-objects.open {
+  right: 0;
+}
+.menu-objects nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+.menu-objects nav ul {
+  list-style-type: none;
+}
+.menu-objects nav ul li {
+  padding: 0.5rem;
+}
+.menu-objects nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.menu-objects nav ul li a:hover {
+  color: #F94D1C;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
 .footer {
   background-color: #0E1021;
   background-image: url("/src/assets/images/Element.svg");
