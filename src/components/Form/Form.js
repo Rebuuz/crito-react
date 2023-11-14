@@ -26,7 +26,7 @@ const Form = () => {
             .min(10, "The message must consist of at least two letters.")
         }),
 
-        onSubmit: async (values) => {
+        onSubmit: async (values, {resetForm}) => {
             const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
                 method: 'post',
                 headers: {
@@ -37,8 +37,12 @@ const Form = () => {
 
             switch (result.status) {
                 case 200:
-                    setMessageSent('Meddelandet skickades!') 
-                    console.log(result)
+                    setMessageSent('Meddelandet skickades!');
+                    resetForm();
+                    setTimeout(() => {
+                        setMessageSent();
+                    }, 4000);
+                    console.log(result);
                     break;
                 case 400:
                     setErrorMessage('Något gick fel')
@@ -57,15 +61,15 @@ const Form = () => {
                 </div>
                 <div className="form-container">
                     <div className="input">
-                        <label className={form.touched.name && form.errors.name ? 'error': ''}>{form.touched.name && form.errors.name}</label>
+                        <label>{form.touched.name && form.errors.name ? form.errors.name: ''}</label>
                         <input type="text" className="form-input" placeholder="Name*" name="name" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur}/>
                     </div>
                     <div className="input">
-                        <label className={form.touched.email && form.errors.email ? 'error': ''}>{form.touched.email && form.errors.email}</label>
+                        <label>{form.touched.email && form.errors.email ? form.errors.email: ''}</label>
                         <input type="email" className="form-input" placeholder="Email*" name="email" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur}/>
                     </div>
                     <div className="input">
-                        <label className={form.touched.message && form.errors.message ? 'error': ''}>{form.touched.message && form.errors.message}</label>
+                        <label>{form.touched.message && form.errors.message ? form.errors.message: ''}</label>
                         <textarea className="form-input" name="message" rows="5" placeholder="Your Message*" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur}></textarea>
                     </div>
                     <p className="success-message">{messageSent}</p>
