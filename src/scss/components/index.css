@@ -2081,3 +2081,34 @@ body {
   width: 100%;
   height: 620px;
 }
+
+/* ARTICLES PAGE */
+.articles {
+  margin: 5rem 10rem 5rem 10rem;
+}
+.articles .container .section-title {
+  margin-bottom: 2rem;
+}
+.articles .container .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.articles .container .articles-container .article-item {
+  margin-top: 3rem;
+}
+.articles .container .articles-container .article-item p {
+  margin-top: 1rem;
+}
+.articles .container .articles-container .article-item h3 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.articles .container .articles-container .article-item img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

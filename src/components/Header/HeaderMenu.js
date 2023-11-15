@@ -29,9 +29,9 @@ const HeaderMenu = () => {
     <div className="main-menu">
         <nav>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/services">Services</NavLink>
-            <NavLink to="/news">News</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/Services">Services</NavLink>
+            <NavLink to="/News">News</NavLink>
+            <NavLink to="/Contact">Contact</NavLink>
         </nav>
         <a className="btn-yellow btn-login" href="#">Login <i className="fa-regular fa-arrow-up-right"></i></a>
     </div>
