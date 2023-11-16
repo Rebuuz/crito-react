@@ -21,9 +21,29 @@
                 }
 
                 h3 {
-                    font-family: DM Sans, sans-serif;
+                    font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
+                }
+
+                .published {
+                    background-color: #F9D783;
+                    width: 56px;
+                    height: 64px;
+                    text-align: center;
+                    position: absolute;
+                    margin: 1rem;
+                    line-height: .3;
+                    font-size: 22px;
+
+                    .day {
+                        font-weight: 700;
+                    }
+
+                    .month {
+                        font-weight: 400;
+                        font-size: 16px;
+                    } 
                 }
 
                 img {
@@ -33,5 +53,37 @@
                 }
             }
         }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+
+            i {
+                border: 1px solid #EAE9F2;
+                height: 38px;
+                width: 38px;
+                text-align: center;
+                padding: .5rem;
+            }
+
+                span {
+                    padding: .5rem;
+                    width: 38px;
+                    height: 38px;
+                    border: 1px solid #EAE9F2;
+                    border-radius: 5px;
+                }
+
+                .active {
+                    background-color: #191919;
+                    border: 1px solid #191919;
+                    color: #ffff;
+                }
+            }
+
+            
     }
 }
