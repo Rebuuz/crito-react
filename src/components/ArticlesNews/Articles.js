@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Articles = () => {
     const [articles, setArticles] = useState([])
@@ -31,6 +32,7 @@ const Articles = () => {
             <div className="articles-container">
                 {
                     articles.map(article => (
+                        <Link className="article-link" key={article.id} to={`/articles/${article.id}`}>
                         <div className="article-item" key={article.id}>
                             <div className="published">
                             {article.formattedDate && (
@@ -49,6 +51,7 @@ const Articles = () => {
                             <h3>{article.title}</h3>
                             <p>{article.content}</p>
                         </div>
+                        </Link>
                     ))
                 }
             </div>

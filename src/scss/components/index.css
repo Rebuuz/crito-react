@@ -300,12 +300,7 @@ header .container .menu .main-menu .btn-login {
   z-index: 999;
 }
 .menu-bars .fa-times {
-  color: #fff;
-}
-.menu-bars .fa-times:hover {
   color: #F94D1C;
-  transition: 0.5s;
-  transform: scale(1.1);
 }
 
 .menu-objects {
@@ -314,7 +309,7 @@ header .container .menu .main-menu .btn-login {
   right: -100vw;
   height: 50vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(19, 19, 19, 0.9);
   transition: right 0.3s ease;
 }
 .menu-objects.open {
@@ -323,9 +318,8 @@ header .container .menu .main-menu .btn-login {
 .menu-objects nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding-top: 5rem;
-  padding-right: 2rem;
   text-align: center;
 }
 .menu-objects nav ul {
@@ -339,11 +333,6 @@ header .container .menu .main-menu .btn-login {
   color: #fff;
   font-weight: 500;
   font-size: 1.1em;
-}
-.menu-objects nav ul li a:hover {
-  color: #F94D1C;
-  transition: 0.5s;
-  transform: scale(1.1);
 }
 
 .footer {
@@ -2087,7 +2076,7 @@ body {
   margin: 5rem 10rem 5rem 10rem;
 }
 .articles .container .section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 .articles .container .articles-container {
   display: grid;
@@ -2095,18 +2084,25 @@ body {
   gap: 2rem;
   margin-bottom: 5rem;
 }
-.articles .container .articles-container .article-item {
-  margin-top: 3rem;
+.articles .container .articles-container .article-link {
+  text-decoration: none;
+  color: #191919;
 }
-.articles .container .articles-container .article-item p {
+.articles .container .articles-container .article-link:hover {
+  text-decoration: underline;
+}
+.articles .container .articles-container .article-link .article-item {
+  margin-top: 2rem;
+}
+.articles .container .articles-container .article-link .article-item p {
   margin-top: 1rem;
 }
-.articles .container .articles-container .article-item h3 {
+.articles .container .articles-container .article-link .article-item h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
 }
-.articles .container .articles-container .article-item .published {
+.articles .container .articles-container .article-link .article-item .published {
   background-color: #F9D783;
   width: 56px;
   height: 64px;
@@ -2116,14 +2112,14 @@ body {
   line-height: 0.3;
   font-size: 22px;
 }
-.articles .container .articles-container .article-item .published .day {
+.articles .container .articles-container .article-link .article-item .published .day {
   font-weight: 700;
 }
-.articles .container .articles-container .article-item .published .month {
+.articles .container .articles-container .article-link .article-item .published .month {
   font-weight: 400;
   font-size: 16px;
 }
-.articles .container .articles-container .article-item img {
+.articles .container .articles-container .article-link .article-item img {
   width: 100%;
   height: 60%;
   -o-object-fit: cover;
