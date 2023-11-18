@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import Article1 from '../../assets/images/25mars.png';
@@ -15,7 +16,7 @@ const ArticlesNews = () => {
             <h2>Get Every Single Articles & News <a className="btn-transparent" href="#">Browse Articles <i className="fa-regular fa-arrow-up-right"></i></a></h2>
            </div> 
            <div className="news-section">
-            <NavLink className="article" to="/article">
+            <NavLink className="article" to="/ArticleDetails/cb24396b-ae21-4c34-a267-d0cd0600aa6d">
                 <img src={Article1} alt="Bild på en kvinna" />
                 <p>Business</p>
                 <h3>How To Use Digitalization In The Classroom</h3>
