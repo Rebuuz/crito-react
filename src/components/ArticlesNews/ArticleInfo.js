@@ -14,6 +14,7 @@ const ArticleInfo = () => {
     const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
 
     if(result.status === 200) {
+
       setArticleDetails(await result.json())
     }
   }
