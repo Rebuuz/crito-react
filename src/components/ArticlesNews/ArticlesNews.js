@@ -8,6 +8,7 @@ import Article2 from '../../assets/images/17mars.png';
 import Article3 from '../../assets/images/13mars.png';
 
 const ArticlesNews = () => {
+    
   return (
     <section className="articles-news">
         <div className="container">
@@ -22,7 +23,7 @@ const ArticlesNews = () => {
                 <h3>How To Use Digitalization In The Classroom</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
             </NavLink>
-            <NavLink className="article" to="/article">
+            <NavLink className="article" to="/ArticleDetails/cc6c2b75-8ee7-4e4e-8a99-66fe89a4b789">
                 <img src={Article2} alt="Närbild på en datorskärm" />
                 <p>Business</p>
                 <h3>How To Implement Chat GPT In Your Projects</h3>
